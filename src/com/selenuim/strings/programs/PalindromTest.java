@@ -2,35 +2,39 @@ package com.selenuim.strings.programs;
 
 public class PalindromTest {
 
+
+public static void isPolindromTest(String str) {
+		
+		int lenth = str.length();
+		
+		String reverse ="";
+		for(int i=lenth-1;i>=0;i--) {
+			reverse = reverse + str.charAt(i); //place the reverse order character one by one until string length zero
+		}
+		if(reverse.contains(str)) {
+			System.out.println("Polindrom String");
+			
+		}else {
+			System.out.println("Not polindrom String ");
+		}
+		
+		
+	}
+	
 	public static void main(String[] args) {
 		
 		//One Way to do polindrom
 		
-		String str = "JAGADEESH";
+		String str = "malayalam";
 		StringBuilder buider = new StringBuilder(str);
 		
 		buider.reverse();
 		
-		System.out.println(buider);
-		String s2 = "madam";
-		System.out.println(PalindromTest.isPalindromeString(s2));
+		isPolindromTest(str);
+
 
 
 	}
 
 
-    private static boolean isPalindromeString(String str) {
-        if (str == null)
-            return false;
-        int length = str.length();
-        System.out.println(length / 2);
-        for (int i = 0; i < length / 2; i++) {
-
-            if (str.charAt(i) != str.charAt(length - i - 1))
-            	
-            	System.out.println("false");
-                return false;
-        }
-        return true;
-    }
 }
