@@ -1,3 +1,4 @@
+
 package com.selenuim.strings.programs;
 class NoOfOccurenceOfCharacters {
     static final int MAX_CHAR = 256;

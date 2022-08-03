@@ -8,7 +8,7 @@ public class ReverseString {
 		//Polindrom as well
 		
 		//using for loop
-		String s = "malayalam";
+		String s = "how are you";
 		
 		int len = s.length();
 		
